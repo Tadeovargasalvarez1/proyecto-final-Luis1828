@@ -1,88 +1,158 @@
 <!DOCTYPE html>
 <head>
-
     <title>CinePalace - Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
 </head>
 
 <body>
 
-    <header>
-        <div>
-            <h1>CinePalace</h1>
-            <p>Mi perfil</p>
-        </div>
+    <div class="contenedor">
 
-        <button>
-            Notificaciones
-        </button>
-    </header>
+        <header class="encabezado">
 
-    <main>
+            <div>
+                <h1>CinePalace</h1>
+                <p>Mi perfil</p>
+            </div>
 
-        <section>
-            <img src="perfil.jpg" alt="Foto de perfil">
-
-            <button>
-                Editar perfil
+            <button class="notificacion">
+                <img src="notification.svg" alt="Notificaciones">
             </button>
 
-            <h2>Usuario Premium</h2>
-            <p>cinephile@example.com</p>
-        </section>
+        </header>
 
-        <section>
-            <article>
-                <h3>12</h3>
-                <p>Películas</p>
-            </article>
+        <main>
 
-            <article>
-                <p>Nivel VIP</p>
-            </article>
-        </section>
 
-        <section>
-            <button>
-                Mis reservas
-            </button>
+            <section class="perfil">
 
-            <button>
-                Configuración
-            </button>
-        </section>
+                <div class="foto-contenedor">
 
-        <section>
-            <article>
-                <h3>CinePalace Elite</h3>
-                <p>Disfruta de beneficios exclusivos y preventas.</p>
+                    <img class="foto" src="user.svg" alt="Foto de perfil">
 
-                <div>
-                    <p>Barra de progreso</p>
+                    <button class="editar">✎</button>
+
                 </div>
 
-                <p>Próximo nivel</p>
-                <p>750 pts</p>
-            </article>
-        </section>
+                <h2>Usuario Premium</h2>
+                <p>cinephile@example.com</p>
 
-        <section>
-            <button>
+            </section>
+
+
+            <section class="estadisticas">
+
+                <article class="tarjeta-estadistica">
+
+                    <h3>12</h3>
+                    <p>Películas</p>
+
+                </article>
+
+                <article class="tarjeta-estadistica">
+
+                    <img src="star.svg" alt="Nivel VIP">
+                    <p>Nivel VIP</p>
+
+                </article>
+
+            </section>
+
+
+            <section class="opciones">
+
+                <button>
+
+                    <span>
+                        <img src="date.svg" alt="">
+                        Mis reservas
+                    </span>
+
+                    <b>›</b>
+
+                </button>
+
+                <button>
+
+                    <span>
+                        <span class="engranaje">⚙</span>
+                        Configuración
+                    </span>
+
+                    <b>›</b>
+
+                </button>
+
+            </section>
+
+
+            <section class="elite">
+
+                <div class="elite-titulo">
+
+                    <h3>CinePalace Elite</h3>
+                    <img src="star.svg" alt="Elite">
+
+                </div>
+
+                <p class="descripcion">
+                    Disfruta de beneficios exclusivos y preventas.
+                </p>
+
+                <div class="barra">
+                    <div class="progreso"></div>
+                </div>
+
+                <div class="datos-progreso">
+                    <span>Próximo nivel</span>
+                    <span>750 pts</span>
+                </div>
+
+            </section>
+
+
+            <button class="cerrar-sesion">
+                <span>↪</span>
                 Cerrar sesión
             </button>
-        </section>
 
-    </main>
+        </main>
 
-    <footer>
-        <a href="#">¿Necesitas ayuda?</a>
-        <p>CinePalace App v2.4.0</p>
+        <footer>
 
-        <nav>
-            <a href="#">Cartelera</a>
-            <a href="#">Buscar</a>
-            <a href="#">Perfil</a>
-        </nav>
-    </footer>
+            <div class="ayuda">
+                <a href="#">¿Necesitas ayuda?</a>
+            </div>
+
+            <nav>
+
+                <a href="#">
+
+                    <img src="cartelera.svg" alt="Cartelera">
+                    <span>Cartelera</span>
+
+                </a>
+
+                <a href="#">
+
+                    <img src="search.svg" alt="Buscar">
+                    <span>Buscar</span>
+
+                </a>
+
+                <a class="activo" href="#">
+
+                    <img src="user.svg" alt="Perfil">
+                    <span>Perfil</span>
+
+                </a>
+
+            </nav>
+
+        </footer>
+
+    </div>
 
 </body>
+
 </html>
